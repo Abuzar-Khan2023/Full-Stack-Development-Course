@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(91, 22, 22);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+label {
+    color: #000000;
+    font-size: 20px;
+    margin: 10px 5px;
+    font-weight: 700;
+}
+
+input {
+    height: 30px;
+    width: 300px;
+    margin: 10px 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #ffffff;
+    height: 30px;
+    width: 300px;
+    margin: 10px 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    transition: all 0.8s ease;
+}
+
+.button:hover {
+    background-color: #000000;
+    color: white;
+}
