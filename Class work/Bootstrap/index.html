@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+
+    <input id="demo1" type="text" name="name" id="name">
+    <br>
+    <input type="submit">
+
+    <h1 id="demo">Demo</h1>
+
+
+    <!-- <h1 id="demo"></h1>
+
+    <h2 id="demo1"></h2>
+
+    <script>
+        // document.body.style.backgroundColor = 'red';
+
+        // document.getElementById('demo').innerHTML = 'The title of this demo is: ' + document.title;
+
+        document.getElementById('demo').innerHTML = document.URL
+
+        // document.getElementById('demo1').innerHTML 'The title of this demo is' = document.demo1
+    </script> -->
+
+    <script>
+        function getElements() {
+            var x = document.getElementsByTagName('input');
+            document.getElementById('demo').innerHTML = x.length;
+        }
+
+        document.body.style.backgroundColor = 'red';
+
+        document.getElementById('demo').innerHTML = document.URL;
+    </script>
+    
+</body>
+</html>
