@@ -79,3 +79,22 @@
         display: block;
     }
 }
+
+
+.box1 {
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    background-color: blue;
+    padding: 20px;
+}
+
+.box2 {
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    background-color: red;
+    padding: 20px;
+    margin: 20px;
+}
+

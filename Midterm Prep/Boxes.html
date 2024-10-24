@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes with Background Images</title>
+</head>
+<body>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            color: white;
+        }
+
+        .box1 {
+            height: 200px;
+            width: 300px;
+            background-image: url('/CourseMid/Lecture-7-body/Lecture-7-body/1.jpg');
+            background-size: cover;
+        }
+
+        .box2 {
+            height: 200px;
+            width: 300px;
+            background-image: url('/CourseMid/Lecture-7-body/Lecture-7-body/2.jpg');
+            background-size: cover;
+        }
+
+        .box3 {
+            height: 200px;
+            width: 300px;
+            background-image: url('/CourseMid/Lecture-7-body/Lecture-7-body/3.jpg');
+            background-size: cover;
+        }
+
+        .box1:hover {
+            background-image: url('/CourseMid/Lecture-7-body/Lecture-7-body/3.jpg');
+            background-size: cover;
+            color: black;
+        }
+    </style>
+
+    <div class="container">
+        <div class="box1">
+            <h3>B 01</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="box2">
+            <h3>B 02</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="box3">
+            <h3>B 03</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

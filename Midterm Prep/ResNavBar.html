@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-bar {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            position: relative;
+        }
+
+        .logo {
+            margin: 15px;
+            font-size: large;
+        }
+
+        .menu ul{
+            display: flex;
+            justify-content: space-between;
+            margin: 15px;
+            list-style: none;
+        }
+
+        .menu li {
+            margin: 15px;
+            font-size: large;
+            cursor: pointer;
+        }
+        
+        .toggle {
+            display: none;
+            margin: 15px;
+            cursor: pointer;
+        }
+
+    @media screen and (max-width: 768px) {
+        .nav-bar {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .menu ul {
+            display: none;
+            position: absolute;
+            top: 70px;
+            right: 0;
+            background-color: black;
+        }
+
+        .toggle {
+            display: block;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        .menu.active ul {
+            display: block;
+        }
+    }
+
+
+    </style>
+    
+    <div class="nav-bar">
+        <div class="logo">
+            Logo
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div class="toggle">=</div>
+    </div>
+
+    <script>
+        const toggle = document.querySelector('.toggle');
+        const menu = document.querySelector('.menu');
+
+        toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

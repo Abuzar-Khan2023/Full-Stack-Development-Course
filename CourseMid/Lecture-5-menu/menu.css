@@ -1,0 +1,62 @@
+ *{
+	padding: 0;
+	margin: 0;
+}
+
+.menu {
+	background-color: grey;
+	padding: 20px;
+}
+
+.menuul li {
+	list-style-type: none;
+	padding: 20px;
+	margin: 20px;
+}
+
+.menuul li a {
+	text-decoration: none;
+	color: green;
+}
+
+.menuul li a:hover {
+	color: blue;
+}
+
+.topmenumobile {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.menuul {
+	display: none;
+	text-align: center;
+}
+
+.active {
+	display: block;
+}
+
+@media screen and (min-width: 768px) {
+	.topmenumobile {
+		display: none;
+	}
+
+	.menuul {
+		display: flex;
+	}
+
+	.menu {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.menuul li {
+		padding: 0;
+		margin:0 10px 0 0;
+	}
+
+
+}
